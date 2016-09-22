@@ -122,6 +122,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangesPanel.cs" />
+    <Compile Include="ChangesPanel.Designer.cs">
+      <DependentUpon>ChangesPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="EggsPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +133,10 @@
       <DependentUpon>EggsPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Encryption.cs" />
+    <Compile Include="FormChanges.cs" />
+    <Compile Include="FormChanges.Designer.cs">
+      <DependentUpon>FormChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,8 +230,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChangesPanel.resx">
+      <DependentUpon>ChangesPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EggsPanel.resx">
       <DependentUpon>EggsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChanges.resx">
+      <DependentUpon>FormChanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IncubatorSelect.resx">
       <DependentUpon>IncubatorSelect.cs</DependentUpon>
@@ -264,7 +278,6 @@
     <EmbeddedResource Include="Lang\spain.json" />
     <EmbeddedResource Include="Lang\tr.json" />
     <EmbeddedResource Include="Lang\arabic.json" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -525,6 +538,8 @@
     <None Include="Resources\150-200.png" />
     <None Include="Resources\151-200.png" />
     <Content Include="Resources\boy.png" />
+    <None Include="Resources\combo_by_rootofitall-d8ulo4t.gif" />
+    <None Include="Resources\giphy %281%29.gif" />
     <Content Include="Resources\girl.png" />
     <Content Include="Resources\instinct.png" />
     <Content Include="Resources\mystic.png" />
@@ -533,6 +548,7 @@
     <None Include="Resources\team-valor.png" />
     <None Include="Resources\Trainer_F.png" />
     <None Include="Resources\Trainer_M.png" />
+    <None Include="Resources\Ninja.bmp" />
     <Content Include="Resources\valor.png" />
     <None Include="Resources\start_point.png" />
     <None Include="Resources\151-35.png" />
